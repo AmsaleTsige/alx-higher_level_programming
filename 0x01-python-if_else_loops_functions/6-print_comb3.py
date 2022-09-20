@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-for i in range(0, 8):
-    for j in range(i + 1, 10):
-        print("{:d}{:d}".format(i, j), end=', ')
-        print("{:d}{:d}".format(i + 1, j))
+for x in range(10):
+    for y in range(10):
+        if x < y:
+            if (x * 10 + y) != 89:
+                print("{}{},".format(x, y), end=" ")
+            else:
+                print("{}{}".format(x, y))
