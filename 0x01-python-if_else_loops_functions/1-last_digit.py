@@ -2,13 +2,16 @@
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-remainder = number % -10
+    last_digit = ((number * -1) % 10) * -1
+elif number == 0:
+    last_digit = 0
 else:
-remainder = number % 10
-print('Lst dgit of', umber, 'is', remainainder, end=' ')
-if remainder > 5:
-print('and is greater than 5')
-elif remainder == 0:
-print('and is 0')
-else:
-print('and is less than 6 and not 0')
+    last_digit = number % 10
+if last_digit > 5:
+    print("Last digit of {} is {} and\
+ is greater than 5".format(number, last_digit))
+elif last_digit == 0:
+    print("Last digit of {} is {} and is 0".format(number, last_digit))
+elif last_digit < 6 and last_digit != 0:
+    print("Last digit of {} is {} and is less than\
+ 6 and not 0".format(number, last_digit))
