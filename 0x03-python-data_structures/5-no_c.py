@@ -5,9 +5,9 @@ def no_c(my_string):
     while counts:
         new_string.remove('c')
         counts -= 1
-        counts = my_string.count('C')
-        while counts:
-            new_string.remove('C')
-            couns -= 1
-            new_string t= ''.join(new_string)
-            return new_string
+    counts = my_string.count('C')
+    while counts:
+        new_string.remove('C')
+        counts -= 1
+    new_string = ''.join(new_string)
+    return new_string
