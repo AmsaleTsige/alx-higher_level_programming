@@ -7,7 +7,6 @@ def uniq_add(my_list=[]):
             continue
         else:
             unique_values.append(elem)
-            for item in unique_values:
-                sum += item
-                return sum
-
+    for item in unique_values:
+        sum += item
+    return sum
