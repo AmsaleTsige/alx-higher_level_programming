@@ -6,5 +6,5 @@ def square_matrix_simple(matrix=[]):
         for elem in row:
             elem = elem * elem
             transpose.append(elem)
-            new_matrix.append(transpose)
-            return new_matrix
+        new_matrix.append(transpose)
+    return new_matrix
