@@ -10,3 +10,4 @@ def uniq_add(my_list=[]):
             for item in unique_values:
                 sum += item
                 return sum
+
