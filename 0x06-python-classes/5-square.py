@@ -16,16 +16,16 @@ class Square:
          @size.setter
          def size(self, value):
              """Initializes attribute size """
-             if (type(value) is not int):
-                 raise TypeError("size must be an integer")
-             elif value < 0:
-                 raise ValueError("size must be >= 0")
-             else:
-                 self.__size = value
-                 def my_print(self):
-                     for i in range(self.__size):
-                         for j in range(self.__size):
-                             print('#', end="")
-                             print()
-                             if self.size <= 0:
-                                 print()
+         if (type(value) is not int):
+         raise TypeError("size must be an integer")
+         elif value < 0:
+         raise ValueError("size must be >= 0")
+         else:
+         self.__size = value
+         def my_print(self):
+         for i in range(self.__size):
+         for j in range(self.__size):
+         print('#', end="")
+         print()
+         if self.size <= 0:
+         print()
