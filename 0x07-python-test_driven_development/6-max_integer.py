@@ -15,8 +15,4 @@ def max_integer(list=[]):
         if list[i] > result:
             result = list[i]
         i += 1
-<<<<<<< HEAD
-     return result
-=======
     return result
->>>>>>> 3281c7e0f009c6238ad33e76054e4b4daa2555ab
